@@ -18,7 +18,7 @@ Default phase of execution is `verify`. The following is an example of a configu
         <plugins> 
           ...
           <plugin>
-            <groupId>org.scalastyle</groupId>
+            <groupId>org.neo4j</groupId>
             <artifactId>scalastyle-maven-plugin</artifactId>
             <version>0.8.0</version>
             <configuration>

@@ -5,10 +5,10 @@
   <artifactId>oss-parent</artifactId>
   <version>7</version>
  </parent>
- <groupId>org.scalastyle</groupId>
+ <groupId>org.neo4j</groupId>
  <artifactId>scalastyle-maven-plugin</artifactId>
  <packaging>maven-plugin</packaging>
- <version>1.1.0-SNAPSHOT</version>
+ <version>1.1.1</version>
  <name>Scalastyle Maven Plugin</name>
  <description>Integrates Scalastyle style checker for Scala with maven</description>
  <inceptionYear>2012</inceptionYear>
@@ -19,16 +19,16 @@
 
  <properties>
   <scalastyle.artifactId>scalastyle_2.11</scalastyle.artifactId>
-  <scalastyle.version>1.1.0-SNAPSHOT</scalastyle.version>
+  <scalastyle.version>1.1.1</scalastyle.version>
   <maven.version>3.0</maven.version>
-  <maven.compiler.source>1.5</maven.compiler.source>
-  <maven.compiler.target>1.5</maven.compiler.target>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
   <junit.version>4.11</junit.version>
  </properties>
 
  <dependencies>
   <dependency>
-   <groupId>org.scalastyle</groupId>
+   <groupId>org.neo4j</groupId>
    <artifactId>${scalastyle.artifactId}</artifactId>
    <version>${scalastyle.version}</version>
   </dependency>
@@ -101,8 +101,8 @@
     <artifactId>maven-compiler-plugin</artifactId>
     <version>2.3.2</version>
     <configuration>
-     <source>1.5</source>
-     <target>1.5</target>
+     <source>1.8</source>
+     <target>1.8</target>
      <encoding>UTF-8</encoding>
     </configuration>
    </plugin>
@@ -238,7 +238,7 @@
    <build>
     <plugins>
      <plugin>
-      <groupId>org.scalastyle</groupId>
+      <groupId>org.neo4j</groupId>
       <artifactId>scalastyle-maven-plugin</artifactId>
       <version>${project.version}</version>
       <configuration>
